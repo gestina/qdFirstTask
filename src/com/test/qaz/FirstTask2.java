@@ -10,5 +10,8 @@ public class FirstTask2 {
         int count = stringTokenizer.countTokens();
         System.out.println("Всего абзацев: " + count);
 
+        for (int i = 0; i < count; i++) {
+            System.out.println(stringTokenizer.nextToken());
+        }
     }
 }
