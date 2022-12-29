@@ -2,7 +2,6 @@ package com.test.qaz;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Тест");
         for (String arg : args) {
             for (String degree : arg.split(",")) {
                 System.out.println(degree);
