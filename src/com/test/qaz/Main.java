@@ -1,11 +1,10 @@
 package com.test.qaz;
-import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
         System.out.println("Тест");
-        for (int i = 0; i < args.length; i++) {
-            for (String degree : args[i].split(",")) {
+        for (String arg : args) {
+            for (String degree : arg.split(",")) {
                 System.out.println(degree);
                 int count = 0;
                 if (degree.length() != 0) {
@@ -17,8 +16,7 @@ public class Main {
                     }
                 }
                 System.out.println("Вы ввели " + count + " слов");
-        }
-
+            }
         }
     }
 }
